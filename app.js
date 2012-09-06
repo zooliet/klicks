@@ -34,6 +34,7 @@ app.configure('development', function(){
 // routes
 app.get('/', routes.index);
 require('./apps/dummy/routes')(app);
+require('./apps/events/routes')(app);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
