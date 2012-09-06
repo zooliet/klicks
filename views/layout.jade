@@ -1,7 +1,14 @@
 doctype 5
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+	head
+		title= title
+		// - if (typeof(stylesheet) != 'undefined')
+		if locals.stylesheet
+			link(rel='stylesheet', href='/stylesheets/#{stylesheet}.css')
+		else
+			link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		block content
+
+
+	!= js('application')
