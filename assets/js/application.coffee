@@ -18,4 +18,4 @@ jQuery ->
 				url: '/events'
 				success: (result) =>
 					console.log(result.msg)
-					$(@).css('top', "#{top}px").css('left', "#{left}px").show(2000)
+					$(@).css('top', "#{top}px").css('left', "#{left}px").show()

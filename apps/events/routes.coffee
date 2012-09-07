@@ -7,6 +7,9 @@ routes = (app) ->
 			stylesheet: "events"
 			
 		app.post '/events', (req, res) ->
-			res.json msg: "OK"
+			send_result = ->
+				res.json(msg: "OK")
+			setTimeout send_result, 1000*1
+			# res.json msg: "OK"
 			
 module.exports = routes
