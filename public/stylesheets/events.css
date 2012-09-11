@@ -29,7 +29,24 @@ div.target:hover {
 	cursor: pointer;
 }
 
+div#counter {
+	width: 90%;
+	margin: 10px auto;*/
+}
 
+div#counter table {
+/*	border: 1px soild black;*/
+	margin: 10px auto;
+	font-size: 24px;
+}
+
+div#counter table td{
+	width: 80px;
+	height: 42px;
+	text-align: center;
+	background-color: #333;
+	color: white;
+}
 
 a {
   color: #00B7FF;
